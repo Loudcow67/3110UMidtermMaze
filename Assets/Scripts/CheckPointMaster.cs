@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class CheckPointMaster : MonoBehaviour
 {
-    public GameObject checkpoint;
+    public GameObject[] checkpoint;
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        for (int i = checkpoint.Length-1; i >= 0; i--)
         {
-            Destroy(checkpoint);
-            Destroy(gameObject);
+            if (other.CompareTag("Player"))
+            {
+                Destroy(checkpoint[i]);
+                Destroy(gameObject);
+            }
         }
     }
 }

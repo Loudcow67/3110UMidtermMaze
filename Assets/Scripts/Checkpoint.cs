@@ -15,7 +15,6 @@ public class Checkpoint : MonoBehaviour
         {
             player.transform.position = checkpoint.transform.position;
             Physics.SyncTransforms();
-            print("touched");
         }
     }
 }
