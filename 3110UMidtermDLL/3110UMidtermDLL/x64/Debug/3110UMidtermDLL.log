@@ -1,0 +1,10 @@
+﻿  CheckpointTimeLogger.cpp
+C:\Users\Logan\source\repos\3110UMidtermDLL\3110UMidtermDLL\CheckpointTimeLogger.h(18,27): warning C4251: 'CheckpointTimeLogger::m_RTBC': class 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of class 'CheckpointTimeLogger'
+C:\Users\Logan\source\repos\3110UMidtermDLL\3110UMidtermDLL\CheckpointTimeLogger.h(18): message : see declaration of 'std::vector<float,std::allocator<float>>'
+C:\Users\Logan\source\repos\3110UMidtermDLL\3110UMidtermDLL\CheckpointTimeLogger.cpp(28,22): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Wrapper.cpp
+C:\Users\Logan\source\repos\3110UMidtermDLL\3110UMidtermDLL\CheckpointTimeLogger.h(18,27): warning C4251: 'CheckpointTimeLogger::m_RTBC': class 'std::vector<float,std::allocator<float>>' needs to have dll-interface to be used by clients of class 'CheckpointTimeLogger'
+C:\Users\Logan\source\repos\3110UMidtermDLL\3110UMidtermDLL\CheckpointTimeLogger.h(18): message : see declaration of 'std::vector<float,std::allocator<float>>'
+  Generating Code...
+     Creating library C:\Users\Logan\source\repos\3110UMidtermDLL\x64\Debug\3110UMidtermDLL.lib and object C:\Users\Logan\source\repos\3110UMidtermDLL\x64\Debug\3110UMidtermDLL.exp
+  3110UMidtermDLL.vcxproj -> C:\Users\Logan\source\repos\3110UMidtermDLL\x64\Debug\3110UMidtermDLL.dll
