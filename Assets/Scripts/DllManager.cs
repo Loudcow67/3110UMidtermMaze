@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime.InteropServices;
+using UnityEngine.UI;
 
 public class DllManager : MonoBehaviour
 {
+
     const string DLL_NAME = "3110UMidtermDLL";
 
     [DllImport(DLL_NAME)]
@@ -56,6 +58,8 @@ public class DllManager : MonoBehaviour
     {
         lastTime = Time.time;
     }
+
+    public Text timerText;
     
     void OnTriggerEnter(Collider other)
     {
@@ -67,7 +71,7 @@ public class DllManager : MonoBehaviour
             
             SaveTime(checkpointTime);
             Debug.Log(LoadTime(0)); 
-            Debug.Log(LoadTotalTime());
+            timerText.text = LoadTotalTime().ToString();
         }
     }
 
